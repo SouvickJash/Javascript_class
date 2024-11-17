@@ -1,0 +1,10 @@
+.container{
+    /* margin-top: 20px; */
+    width: 300px;
+    height: 200px;
+    background-color: rgb(32, 12, 148);
+    margin-left: 140px;
+}
+h1{
+    color: #fff;
+}

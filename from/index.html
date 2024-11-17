@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>from</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section class="card">
+      <div class="row">
+        <label for="">Name :</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name"/><span id="n"></span>
+      </div>
+      <div>
+        <label for="">Email :</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email"/><span id="e"></span>
+      </div>
+      <div>
+        <label for="">password :</label>
+        <input type="password" name="password" id="password" placeholder="Enter your Password"/><span id="p"></span>
+      </div>
+      <div>
+        <label for="">city :</label>
+        <input type="text" name="city" id="city" placeholder="Enter your City"/><span id="c"></span>
+      </div>
+
+
+
+      <button onclick="Data()">Click me</button>
+      <button onclick="Reset()" class="reset">Reset</button>
+
+      <div class="onuput">
+        <h1 id="showData"></h1>
+      </div>
+      <table>
+         <tr>
+          <th>Name</th> 
+          <th>Email</th> 
+          <th>Password</th> 
+          <th>Ciity</th> 
+         </tr>
+         <tr>
+          <td>
+             
+          </td>
+         </tr>
+      </table>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
