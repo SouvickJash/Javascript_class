@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+    <link rel="stylesheet" href="./task.css">
+</head>
+<body>
+    
+   
+    <div class="container">
+        <label for="">Enter any Age.</label>
+        <input type="number" id="userInput" placeholder="Enter the Age" required>  
+        <span id="error"></span>
+
+        <div class="button-container ">
+            <button onclick="myFunction()">Click me</button>
+            <button onclick="eligible()" id="eligible">Eligible</button>
+            <button onclick="notEligible()" id="eligible">NotEligible</button>
+        </div>
+        <span id="notfound"></span>
+        <span id="output"></span>
+
+        <div id="loading">
+            <img src="./image.png" alt="">
+        </div>
+    
+         <script src="./task.js"></script> 
+    </div> 
+    
+</body>
+</html>
