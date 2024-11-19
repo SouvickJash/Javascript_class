@@ -5,9 +5,7 @@ function display(){
     if(example){
         document.getElementById("checkError").innerHTML=""; 
        
-        document.getElementById("showDetails").innerHTML = `Thank you for register ${count}`
-        document.getElementById("showDetails").innerHTML = `Thank you for register ${count}`
-        
+        document.getElementById("showDetails").innerHTML = `Thank you for register`
         arr.push(example)
         document.getElementById("data").value="";
         document.getElementById("showButton").style.display = "block";

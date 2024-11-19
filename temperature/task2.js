@@ -7,7 +7,7 @@ function convert() {
     document.getElementById("output").innerHTML=""; //submit after data the again submit not show data
   } else {
     document.getElementById("error").innerHTML="";   //remove the error after put the value
-    document.getElementById("output").innerHTML = `Fahrenheit: ${fahrenheit}`;
+    document.getElementById("output").innerHTML = `${celcious}°C = <strong>${fahrenheit}°Fahrenheit:</strong> `;
   }
   document.getElementById("data").value = "";
 }
