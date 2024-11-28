@@ -18,6 +18,7 @@ function display(){
 // show details
 function showData(){
     // document.getElementById("showDetails").innerHTML=arr.map(name => `Your name is: ${name}`).join("<br>")
+    document.getElementById("checkError").innerHTML="";
     document.getElementById("showDetails").innerHTML=arr.map((name,index)=>{
         return `${index+1}. ${name} `;
     }).join("<br>");

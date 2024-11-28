@@ -4,6 +4,7 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+  font-family: arial;
   /* background-color: rgb(13, 104, 81); */
 }
 .container {
@@ -13,6 +14,7 @@ body {
   background-color: rgb(6, 70, 65);
   border-radius: 2px;
   box-shadow: 10px 15px 10px rgb(15, 109, 126);
+
 }
 label {
   font-size: 20px;
@@ -65,6 +67,8 @@ button:hover {
 }
 .output {
   margin-left: 40px;
+  /* padding-right: 30px; */
+  
 }
 span {
   color: rgb(248, 247, 245);
@@ -105,16 +109,16 @@ img{
   /* margin-left: 400px; */
 }
 #loading img {
-  width: 50px; /* Adjust size of the car */
-  height: 30px; /* Adjust height of the car */
+  width: 50px; 
+  height: 30px; 
   position: absolute;
-  animation: moveCar 2s forwards; /* Make it move once */
+  animation: moveCar 2s forwards; 
 }
 
-/* Define the movement of the car */
+
 @keyframes moveCar {
-  0% { left: -200px; } /* Start from left side */
-  100% { left: 100%; } /* End beyond the right side */
+  0% { left: -200px; } 
+  100% { left: 100%; } 
 }
 
 /* Loading container */
@@ -123,6 +127,16 @@ img{
   top: 50%;
   left: 30%;
   transform: translateY(-50%);
-  display: none; /* Initially hidden */
+  display: none;
+}
+.reset {
+ font-family: Arial, Helvetica, sans-serif;
+  border-radius: 2;
+  position: fixed;
+  top: 360px;       
+  left: 480px;     
+  width: 315px;
+  font-weight: bolder;
+  /* z-index: 999;      */
 }
 
