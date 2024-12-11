@@ -1,3 +1,5 @@
+
+
 const myObject = [
     {
         nm: "Swati Giri",
@@ -104,15 +106,23 @@ const myObject = [
         myedu: function () {
             return (this.nm + " is pursuing for " + this.stream);
         },
-        myTour: function (place) {
-            return (`${place} is my fvrt toursism`);
+        myTour: function() {
+          const place = document.getElementById('data').value;
+          console.log(place)
+          // if (place) {
+          //     document.getElementById('tourResult').innerHTML = `${place} is my fvrt tourism`;
+          // } else {
+          //     document.getElementById('tourResult').innerHTML = "Please enter a tourist place!";
+          // }
         },
+    
+        
         baby: {
             bName: "will",
             bAge: 9,
             bSchool: "Barasat high school",
-            bHobby: ["playing", "painting", "coding", {
-                height: "7 ft",
+            bHobby: ["playing", "web development", "coding", {
+                height: "4 ft",
                 weight: 25,
                 BMS: 21
             }]
@@ -194,18 +204,17 @@ const myObject = [
 
       document.getElementById('display').innerHTML=
       `
-        This name is ${result.nm}, i'm form ${result.loc}. <br>
-        my stream is ${result.stream} <br>
-        my age is ${result.age}<br>
-        my hobby's are ${caplitalWordInParent}<br>
-        baby name ${result.baby.bName}😅 he is ${result.baby.bAge} years old <br>
-        his school name is ${result.baby.bSchool}<br>
-        his hobbie's are ${result.baby.bHobby.slice(0,3)}<br>
-        height ${result.baby.bHobby[3].height}<br>
-        weight ${result.baby.bHobby[3].weight}<br>
-        weight ${result.baby.bHobby[3].BMS}
-        weight ${result.baby.bHobby[3].BMS}<br>
-        ${commonHobbies.length > 0 ? `Common hobbies between parent and baby: ${commonHobbies.join(', ')}` : "No common hobbies found between parent and baby."}
+        This name is <strong>${result.nm}</strong>, i'm form <strong>${result.loc}</strong>. <br>
+        my stream is <strong>${result.stream}</strong> <br>
+        i'm <strong>${result.age}</strong> year's old<br>
+        my hobby's are <strong>${caplitalWordInParent}</strong><br>
+        Tourist place: <strong>${result.place}</strong><br>
+        baby name <strong>${result.baby.bName}</strong>😅 he is <strong>${result.baby.bAge}</strong> years old <br>
+        his school name is <strong>${result.baby.bSchool}</strong><br>
+        his hobbie's are <strong>${result.baby.bHobby.slice(0,3)}</strong><br>
+        his height <strong>${result.baby.bHobby[3].height}</strong> weight <strong>${result.baby.bHobby[3].weight}</strong><br>
+        BMS also <strong>${result.baby.bHobby[3].BMS}</strong><br>
+        ${commonHobbies.length > 0 ? `Common hobbies between parent and children: <strong>${commonHobbies.join(', ')}</strong>` : "No common hobbies found between parent and baby."}
         
       `
     }
